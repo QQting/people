@@ -16,7 +16,7 @@ class VelocityTracker(object):
             pv = Person()
             pl = People()
             pl.header.stamp = rospy.Time.now()
-            pl.header.frame_id = '/base_link'
+            pl.header.frame_id = 'base_link'
             pv.position.x = float(sys.argv[1])
             pv.position.y = float(sys.argv[2])
             pv.position.z = .5
